@@ -1,5 +1,8 @@
 /**
  * Created by irworks on 30.04.16.
+ *
+ * Modified by spelfrog
+ * Forked from https://github.com/irworks/uQuery
  */
 
 /* Consider hosting on your server. */
