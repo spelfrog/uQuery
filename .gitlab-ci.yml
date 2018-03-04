@@ -1,10 +1,7 @@
-before_script:
-  - git remote add github git@github.com:spelfrog/uQuery.git
-   
-after_script:
-  - git remote rm github
-   
-build1:
+push:
   stage: build
   script:
-    - git push github
+    - git remote add github git@github.com:spelfrog/uQuery.git
+    - git push github HEAD:master
+    - git remote rm github
+    
