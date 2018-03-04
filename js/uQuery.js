@@ -5,9 +5,6 @@
  * Forked from https://github.com/irworks/uQuery
  */
 
-/* Consider hosting on your server. */
-loadCSSfile('https://api.irwks.cloud/uQuery/css/uQuery.css');
-
 /* loads a css file */
 function loadCSSfile(url) {
     var head  = _('head').html[0];
@@ -49,39 +46,6 @@ function _(elementName) {
     }
 
     this.html = res;
-
-    /* fades an object in */
-    this.fadeIn = function (sec, callback) {
-        sec         = def(sec, 1);
-        this.show();
-        iterateThroughAllOrOne(this.html, function (object) {
-            object.style.animation = 'fadeIn ' + sec + 's linear';
-            object.addEventListener("animationend",function(e){
-                object.style.opacity = 1;
-                if(callback) {
-                    callback(this);
-                }
-            });
-        });
-    };
-
-    /* fades an object out */
-    this.fadeOut = function (sec, keepSpace, callback) {
-        sec         = def(sec, 1);
-        keepSpace   = def(keepSpace, false);
-
-        iterateThroughAllOrOne(this.html, function (object) {
-            object.style.animation = 'fadeOut ' + sec + 's linear';
-            object.addEventListener("animationend",function(e){
-                if(!keepSpace) {
-                    object.style.opacity = 0;
-                }
-                if(callback) {
-                    callback(this);
-                }
-            });
-        });
-    };
 
     /* shows an object, optional: type what display type it should get */
     this.show = function (type) {
