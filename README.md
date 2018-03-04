@@ -12,14 +12,6 @@ Idea based on **jQuery**, a very lightweight JavaScript framework to perform bas
 **gets the actual HTML-DOM element**:
 - _("#id-name").html
 
-## Animation:
-
-**fades an element in**:
-- _("#id-name").fadeIn( {int} duration[default: 1s] );
-
-**fades an element out**:
-- _("#id-name").fadeOut( {int} duration[default: 1s] );
-
 ##DOM-Elements
 
 **set or get content of an element (=text)**:
