@@ -12,7 +12,7 @@ Idea based on **jQuery**, a very lightweight JavaScript framework to perform bas
 **gets the actual HTML-DOM element**:
 - _("#id-name").html
 
-##DOM-Elements
+## DOM-Elements
 
 **set or get content of an element (=text)**:
 - _("#id-name").content( {int} newText[default: undefined] );
